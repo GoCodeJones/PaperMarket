@@ -1,0 +1,16 @@
+{
+  "name": "papermarket",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketplace descentralizado powered by Bitcoin Paper Cash (BPC)",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "format": "prettier --write \"apps/web/src/**/*.{ts,tsx,css}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0"
+  }
+}

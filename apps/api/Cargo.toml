@@ -1,0 +1,49 @@
+[package]
+name        = "papermarket-api"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+
+[[bin]]
+name = "papermarket-api"
+path = "src/main.rs"
+
+[dependencies]
+# Web
+actix-web      = { workspace = true }
+actix-ws       = { workspace = true }
+tokio          = { workspace = true }
+
+
+# Serialização
+serde          = { workspace = true }
+serde_json     = { workspace = true }
+
+# Banco de dados
+sqlx           = { workspace = true }
+
+# Criptografia
+sha2           = { workspace = true }
+secp256k1      = { workspace = true }
+hmac           = { workspace = true }
+pbkdf2         = { workspace = true }
+rand           = { workspace = true }
+hex            = { workspace = true }
+
+# Auth
+argon2         = { workspace = true }
+jsonwebtoken   = { workspace = true }
+uuid           = { workspace = true }
+
+# Utilitários
+chrono         = { workspace = true }
+thiserror      = { workspace = true }
+anyhow         = { workspace = true }
+tracing        = { workspace = true }
+tracing-subscriber = { workspace = true }
+dotenvy        = { workspace = true }
+
+[dev-dependencies]
+actix-rt = "2"
+actix-cors = "0.7"
